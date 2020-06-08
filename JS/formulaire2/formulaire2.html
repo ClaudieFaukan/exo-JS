@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script src="scripts/valider2.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="styles/form1.css" />
+<title>Formulaire </title>
+</head>
+<body>
+	<h2 align="center">Page 1</h2>
+
+	<form action="http://localhost/PHP/retour.php" method="get" 
+		onsubmit="return validateJS();">
+		<p>
+			<label for="nom">Nom: </label>
+			<input type="text" id="nom" name="nom">
+			<span id="errNom" class="erreur"></span>
+		</p>
+		<p>
+			<label for="pass">Pass: </label>
+			<input type="password" id="pass" name="pass">
+			<span id="errPass" class="erreur"></span>
+		</p>
+		<input type="submit" value="OK">
+	</form>
+</body>
+</html>
